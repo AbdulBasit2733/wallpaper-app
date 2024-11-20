@@ -1,14 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import { GestureHandlerRootView } from 'react-native-gesture-handler'
-import { Slot } from 'expo-router'
+// import { DownloadPicture } from '@/components/BottomSheet';
+// import { useWallpapers } from '@/hooks/useWallpapers';
+import { Slot, Stack } from 'expo-router';
+import { View } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
-const Layout = () => {
-  return (
-    <GestureHandlerRootView>
-      <Slot />
+
+export default function Layout() {
+    // const walletpapers = useWallpapers();
+    return <GestureHandlerRootView>
+        <Stack screenOptions={{
+            headerShown: false
+        }} >
+            {/* <Stack.Screen name="(nobottombar)/accountinfo" options={{ headerShown: true, headerTitle: "Account info", headerBackTitle: "Go Back" }} /> */}
+        </Stack>
     </GestureHandlerRootView>
-  )
 }
-
-export default Layout

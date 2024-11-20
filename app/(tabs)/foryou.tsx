@@ -31,7 +31,7 @@ const LikeScreen = () => {
 const LibraryScreen = () => {
   return (
     <View>
-      <Text>Liked Screen</Text>
+      <Text>Library Screen</Text>
     </View>
   );
 };
